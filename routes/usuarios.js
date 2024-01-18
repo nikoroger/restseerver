@@ -7,9 +7,6 @@ const { usuariosGet, usuariosPost, usuariosPut, usuariosPatch, usuariosDelete } 
 const { esRolValido, emailExiste, existeUsuarioPorId } = require('../helpers/db-validators');
 const { validarCampos, validarJWT, tieneRoles } = require('../middlewwares');
 
-validarCampos
-
-
 const router = Router();
 
 router.get('/', usuariosGet);
